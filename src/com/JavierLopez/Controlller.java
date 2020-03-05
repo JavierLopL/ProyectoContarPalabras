@@ -5,11 +5,12 @@ import java.util.Scanner;
 
 /**
  * 
+ * Clase desde donde se inicia el programa y se controla el flujo y ejecución
+ * del mismo.
+ * 
  * @author Javier Lopez Lumbreras
  * @version 0.3
  * 
- *          Clase desde donde se inicia el programa y se controla el flujo y
- *          ejecución del mismo.
  */
 public class Controlller {
 	/**

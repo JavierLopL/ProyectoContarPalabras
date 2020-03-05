@@ -40,9 +40,8 @@ public class StringChecker {
 
 	/**
 	 * Método que cuenta el número de repeticiones de cada carácter diferente en la
-	 * cadena de texto introducida por el usuario. Retorna un HashMap <Character,
-	 * Integer> donde la clave es el carácter y el valor el número de veces que se
-	 * repite ese carácter
+	 * cadena de texto introducida por el usuario. Retorna un HashMap donde la clave
+	 * es el carácter y el valor el número de veces que se repite ese carácter
 	 * 
 	 * @param cadena Cadena de texto (String) introducida por el usuario.
 	 * @return HasMap con los caracteres de la cadena de texto y el número de veces

@@ -3,11 +3,12 @@ package com.JavierLopez;
 import java.util.HashMap;
 
 /**
+ * 
+ * Clase que muestra al usuario los menús y mensajes en pantalla, junto con los
+ * resultados de los diferentes análisis de la cadena de texto.
+ * 
  * @author Javier Lopez Lumbreras
  * @version 0.3
- * 
- *          Clase que muestra al usuario los menús y mensajes en pantalla, junto
- *          con los resultados de los diferentes análisis de la cadena de texto.
  *
  */
 public class Viewer {
@@ -47,9 +48,8 @@ public class Viewer {
 
 	/**
 	 * @param cadena Cadena de texto original introducida por el usuario.
-	 * @param map    HashMap <Character, Integer> que como clave contiene los
-	 *               caracteres de la cadena y como valor el número de veces que se
-	 *               repite ese carácter.
+	 * @param map    HashMap que como clave contiene los caracteres de la cadena y
+	 *               como valor el número de veces que se repite ese carácter.
 	 */
 	public void textoTodosCaracteres(String cadena, HashMap<Character, Integer> map) {
 		String resultado = "";
@@ -60,14 +60,15 @@ public class Viewer {
 	}
 
 	/**
-	 * Muestra un mensaje de bienevenida al iniciar el programa.
+	 * Muestra un mensaje de bienvenida al iniciar el programa.
 	 */
 	public void start() {
 		System.out.println("¡Bienvenido a String Analyzer 0.3! \n");
 	}
 
 	/**
-	 * Muestra un mensaje indicando al usuario que debe introducir una cadena de texto.
+	 * Muestra un mensaje indicando al usuario que debe introducir una cadena de
+	 * texto.
 	 */
 	public void askForString() {
 		System.out.println("Introduce una cadena de texto para analizar:");
@@ -75,7 +76,8 @@ public class Viewer {
 	}
 
 	/**
-	 * Muestra un mensaje de error cuando el usuario no introduce una opción válida en el menú del programa.
+	 * Muestra un mensaje de error cuando el usuario no introduce una opción válida
+	 * en el menú del programa.
 	 */
 	public void showErrorMessage() {
 		System.out.println("Lo siento, no he podido entenderte.");
