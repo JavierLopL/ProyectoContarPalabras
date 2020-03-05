@@ -86,7 +86,7 @@ public class Controlller {
 	}
 
 	private static void countChars() {
-		int total = checker.contarCaracteresTotal(cadenaOriginal);
+		int total = checker.contarNumeroCaracteres(cadenaOriginal);
 		viewer.textoCaracteresTotal(cadenaOriginal, total);
 	}
 
