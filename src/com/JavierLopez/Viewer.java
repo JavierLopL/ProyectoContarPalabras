@@ -6,7 +6,7 @@ import java.util.HashMap;
  * @author Javier Lopez Lumbreras
  * @version 0.3
  * 
- *          Clase que muestra al usuario los menús y mensaje en pantalla, junto
+ *          Clase que muestra al usuario los menús y mensajes en pantalla, junto
  *          con los resultados de los diferentes análisis de la cadena de texto.
  *
  */
