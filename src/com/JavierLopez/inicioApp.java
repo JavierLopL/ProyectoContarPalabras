@@ -21,33 +21,6 @@ public class inicioApp {
 		System.out.println("Número de Palabras: " + textoNumeroPalabras(numeroPalabras));
 
 		HashMap<Character, Integer> map = contarTodosCaracteres(cadenaOriginal);
-		System.out.println(textoTodosCaracteres(map));
-
-		
+		System.out.println(textoTodosCaracteres(map));	
 	}
-
-	
-
-	
-
-	
-
-	static String textoCaracteresTotal(int total) {
-		String cadenaTotal = String.valueOf(total);
-		return cadenaTotal;
-	}
-
-	static String textoNumeroPalabras(int total) {
-		String numPalabras = String.valueOf(total);
-		return numPalabras;
-	}
-
-	static String textoTodosCaracteres(HashMap<Character, Integer> map) {
-		String resultado = "";
-		for (Character key : map.keySet()) {
-			resultado = resultado + key + ": " + map.get(key) + "\n";
-		}
-		return resultado;
-	}
-
 }
