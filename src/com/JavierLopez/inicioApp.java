@@ -10,7 +10,7 @@ public class inicioApp {
 
 	
 
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		
 		// mostrarResultado();
 
@@ -22,5 +22,5 @@ public class inicioApp {
 
 		HashMap<Character, Integer> map = contarTodosCaracteres(cadenaOriginal);
 		System.out.println(textoTodosCaracteres(map));	
-	}
+	}*/
 }
