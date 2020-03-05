@@ -5,12 +5,13 @@ import java.util.HashMap;
 public class Viewer {
 
 	public void showMenu() {
-		System.out.println("Selecciona una opción: ");
+		System.out.println("Introduce un número para seleccionar una opción: ");
 		System.out.println("[1] Contar el número total de caracteres");
 		System.out.println("[2] Contar el número de palabras");
 		System.out.println("[3] Contar cuantas veces se repite cada carácter");
 		System.out.println("[4] Análisis completo");
-		System.out.println("[5] Salir del programa");
+		System.out.println("[5] Introducir una nueva frase");
+		System.out.println("[6] Salir del programa");
 	}
 
 	public void textoCaracteresTotal(String cadena, int total) {
@@ -26,11 +27,11 @@ public class Viewer {
 		for (Character key : map.keySet()) {
 			resultado = resultado + key + ": " + map.get(key) + "\n";
 		}
-		System.out.println("La recurrencia de caracteres en el texto '" + cadena + "' es: \n" + resultado + "\n");
+		System.out.println("La recurrencia de caracteres en el texto '" + cadena + "' es: \n" + resultado);
 	}
 
 	public void start() {
-		System.out.println("Bienvenido a String Analyzer 0.3");
+		System.out.println("¡Bienvenido a String Analyzer 0.3! \n");
 	}
 
 	public void askForString() {
@@ -40,5 +41,9 @@ public class Viewer {
 
 	public void showErrorMessage() {
 		System.out.println("Lo siento, no he podido entenderte.");
+	}
+
+	public void showExitMessage() {
+		System.out.println("¡Adiós!");
 	}
 }

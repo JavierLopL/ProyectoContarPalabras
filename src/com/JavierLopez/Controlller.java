@@ -41,20 +41,24 @@ public class Controlller {
 		option = sc.nextLine();
 		switch (option) {
 		case "1":
-			countChars(cadenaOriginal);
+			countChars();
 			break;
 		case "2":
-			countWords(cadenaOriginal);
+			countWords();
 			break;
 		case "3":
-			countCharRepetition(cadenaOriginal);
+			countCharRepetition();
 			break;
 		case "4":
-			countChars(cadenaOriginal);
-			countWords(cadenaOriginal);
-			countCharRepetition(cadenaOriginal);
+			countChars();
+			countWords();
+			countCharRepetition();
 			break;
 		case "5":
+			setStringToEmpty();
+			break;
+		case "6":
+			endProgram();
 			break;
 		default:
 			viewer.showErrorMessage();
@@ -62,19 +66,28 @@ public class Controlller {
 
 	}
 
-	private static void countCharRepetition(String cadena) {
-		HashMap<Character, Integer> map = checker.contarTodosCaracteres(cadena);
-		viewer.textoTodosCaracteres(cadena, map);
+	private static void endProgram() {
+		viewer.showExitMessage();
+		end = true;
 	}
 
-	private static void countWords(String cadena) {
-		int palabras = checker.contarNumeroPalabras(cadena);
-		viewer.textoNumeroPalabras(cadena, palabras);
+	private static void setStringToEmpty() {
+		cadenaOriginal = "";
 	}
 
-	private static void countChars(String cadena) {
-		int total = checker.contarCaracteresTotal(cadena);
-		viewer.textoCaracteresTotal(cadena, total);
+	private static void countCharRepetition() {
+		HashMap<Character, Integer> map = checker.contarTodosCaracteres(cadenaOriginal);
+		viewer.textoTodosCaracteres(cadenaOriginal, map);
+	}
+
+	private static void countWords() {
+		int palabras = checker.contarNumeroPalabras(cadenaOriginal);
+		viewer.textoNumeroPalabras(cadenaOriginal, palabras);
+	}
+
+	private static void countChars() {
+		int total = checker.contarCaracteresTotal(cadenaOriginal);
+		viewer.textoCaracteresTotal(cadenaOriginal, total);
 	}
 
 }

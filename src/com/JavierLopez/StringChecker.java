@@ -4,9 +4,6 @@ import java.util.HashMap;
 
 public class StringChecker {
 
-	public StringChecker() {
-	}
-
 	public int contarCaracteresTotal(String cadena) {
 		String palabrasJuntas = cadena.replaceAll("\\s+", "");
 		return palabrasJuntas.length();
